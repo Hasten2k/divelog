@@ -3,7 +3,7 @@ package com.divelog.model;
 import java.util.Date;
 
 public class Dive {
-  private String  mDiveSite;
+  private DiveSite mDiveSite;
   private Date    mDiveDate;
   private int     mDiveTime;
   private int     mMaxDepth;
@@ -17,7 +17,7 @@ public class Dive {
   private String  mComments;
   private int     mDiveNumber;
 
-  public Dive( String diveSite, Date diveDate, int diveTime, int maxDepth ) {
+  public Dive( DiveSite diveSite, Date diveDate, int diveTime, int maxDepth ) {
     mDiveSite = diveSite;
     mDiveDate = diveDate;
     mDiveTime = diveTime;
@@ -34,11 +34,11 @@ public class Dive {
         '}';
   }
 
-  public String getDiveSite() {
+  public DiveSite getDiveSite() {
     return mDiveSite;
   }
 
-  public void setDiveSite( String diveSite ) {
+  public void setDiveSite( DiveSite diveSite ) {
     mDiveSite = diveSite;
   }
 
@@ -139,7 +139,7 @@ public class Dive {
     return mDiveNumber;
   }
 
-  public void setDiveNumber( int diveNumber ) {
+  void setDiveNumber( int diveNumber ) {
     mDiveNumber = diveNumber;
   }
 }
