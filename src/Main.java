@@ -1,5 +1,3 @@
-package com.divelog;
-
 import com.divelog.model.Dive;
 import com.divelog.model.DiveSite;
 import com.divelog.model.User;
