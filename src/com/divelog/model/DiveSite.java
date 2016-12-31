@@ -11,6 +11,14 @@ public class DiveSite {
     mCountry = country;
   }
 
+  @Override
+  public String toString() {
+    return "DiveSite{" +
+        "Name: " + mName +
+        ", Country: " + mCountry +
+        '}';
+  }
+
   public String getName() {
     return mName;
   }
