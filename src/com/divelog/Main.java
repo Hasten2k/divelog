@@ -1,6 +1,8 @@
 package com.divelog;
 
 import com.divelog.model.Dive;
+import com.divelog.model.DiveSite;
+import com.divelog.model.User;
 
 import java.util.Date;
 
@@ -8,16 +10,12 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-      Dive dive = new Dive("Elphinstone Reef", new Date(1480329953000L), 40, 35);
-      String site = dive.getDiveSite();
-      String date = dive.getDiveDate().toString();
-      int time = dive.getDiveTime();
-      int depth = dive.getMaxDepth();
+      User carl = new User("cstalhem", "Carl","Stalhem", "carl@stalhem.se");
 
-      System.out.printf("Your last dive was at %s, on %s, lasted for %d minutes and your max " +
-          "depth" +
-          " was " +
-          "%d meters.%n", site, date, time, depth);
-      System.out.println(dive.toString());
+      DiveSite elphinstone = new DiveSite("Elphinstone", "Egypt");
+
+      Dive dive = new Dive(elphinstone, new Date(1480329953000L), 40, 35);
+
+      carl.getLogBook().addDive(dive);
     }
 }
