@@ -31,8 +31,8 @@ public class User {
     mEmail = email;
   }
 
-  public void setNumberOfDives( int numberOfDives ) {
-    mNumberOfDives = numberOfDives;
+  void setNumberOfDives() {
+    mNumberOfDives = mLogBook.getNumberOfDives();
   }
 
   public void setDiveSitesVisited( int diveSitesVisited ) {
