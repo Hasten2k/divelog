@@ -15,6 +15,8 @@ public class User {
     mLastName = lastName;
     mEmail = email;
     mLogBook = new LogBook();
+    mNumberOfDives = 0;
+    mDiveSitesVisited = 0;
   }
 
   public void setFirstName( String firstName ) {
