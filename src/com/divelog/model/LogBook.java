@@ -18,7 +18,7 @@ public class LogBook {
     mLoggedDives.add(dive);
     int diveNumber = mLoggedDives.size();
     dive.setDiveNumber(diveNumber);
-    System.out.printf("Dive was added! You have made %d dives. Good job!", diveNumber);
+    System.out.printf("Dive was added! You have made %d dives. Good job!%n", diveNumber);
   }
 
   public int getNumberOfDives() {
