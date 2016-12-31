@@ -9,7 +9,12 @@ public class LogBook {
     mLoggedDives = new ArrayList<>();
   }
 
-  public void addDive(Dive dive) {
+  @Override
+  public String toString() {
+    return "Your LogBook contains " + getNumberOfDives() + " number of dives.";
+  }
+
+  public void addDive( Dive dive ) {
     mLoggedDives.add(dive);
     int diveNumber = mLoggedDives.size();
     dive.setDiveNumber(diveNumber);
