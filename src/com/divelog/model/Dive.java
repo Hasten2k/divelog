@@ -15,6 +15,7 @@ public class Dive {
   private int     mPressureIn;
   private int     mPressureOut;
   private String  mComments;
+  private int     mDiveNumber;
 
   public Dive( String diveSite, Date diveDate, int diveTime, int maxDepth ) {
     mDiveSite = diveSite;
@@ -47,6 +48,11 @@ public class Dive {
 
   public void setDiveDate( Date diveDate ) {
     mDiveDate = diveDate;
+  }
+
+
+  public void setDiveTime( int diveTime ) {
+    mDiveTime = diveTime;
   }
 
   public Integer getDiveTime() {
@@ -127,5 +133,13 @@ public class Dive {
 
   public void setComments( String comments ) {
     mComments = comments;
+  }
+
+  public int getDiveNumber() {
+    return mDiveNumber;
+  }
+
+  public void setDiveNumber( int diveNumber ) {
+    mDiveNumber = diveNumber;
   }
 }
