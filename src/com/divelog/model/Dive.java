@@ -1,4 +1,4 @@
-package com.divelog;
+package com.divelog.model;
 
 import java.util.Date;
 
