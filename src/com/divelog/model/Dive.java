@@ -4,18 +4,18 @@ import java.util.Date;
 
 public class Dive {
   private DiveSite mDiveSite;
-  private Date    mDiveDate;
-  private int     mDiveTime;
-  private int     mMaxDepth;
-  private int     mBottomTemp;
-  private int     mVisibility;
-  private String  mWaterType;
-  private int     mWeightsUsed;
-  private String  mGasType;
-  private int     mPressureIn;
-  private int     mPressureOut;
-  private String  mComments;
-  private int     mDiveNumber;
+  private Date     mDiveDate;
+  private int      mDiveTime;
+  private int      mMaxDepth;
+  private int      mBottomTemp;
+  private int      mVisibility;
+  private String   mWaterType;
+  private int      mWeightsUsed;
+  private String   mGasType;
+  private int      mPressureIn;
+  private int      mPressureOut;
+  private String   mComments;
+  private int      mDiveNumber;
 
   public Dive( DiveSite diveSite, Date diveDate, int diveTime, int maxDepth ) {
     mDiveSite = diveSite;
