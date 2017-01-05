@@ -5,6 +5,28 @@ public class DiveSite {
   private String mCountry;
   private Double mLatitude;
   private Double mLongitude;
+  private int mTotalDivesAtSite;
+
+  // TODO: Add dive transport options
+  // Off Shore dive
+  // Shore Dive
+  private String mDiveTransport;
+  // TODO: Add options for dive type
+    // Open Water
+    // Cave
+    // Wreck
+    // Wall
+    // Other
+  private String mDiveType;
+
+  // TODO: Add options for salinity
+    // Fresh water
+    // Brackish water
+    // Salt Water
+  private String mWaterSalinity;
+
+  private String mCoverPhoto;
+  private String mComments;
 
   public DiveSite( String name, String country ) {
     mName = name;
